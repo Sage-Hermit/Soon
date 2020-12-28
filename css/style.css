@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body, html {
+    height: 100%
+}
+
+.navbar-brand img{
+    width: 140px;
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5px;
+}
+
+.bg-img {
+    background-image: linear-gradient(rgba(255,254,255,0.5),rgba(173, 247, 168, 1.0)), url(../img/bg-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0;
+    height: 100%;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 100px;
+}
+
+.middle h1 {
+    font-family: Raleway, "Sans-serif";
+    margin-bottom: 2rem;
+    font-size: 4rem;
+}
+
+#launchDate {
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+  
+hr {
+    margin: auto;
+    width: 40%;
+
+}
+
+.footnote {
+    position: absolute;
+    bottom: 5px;
+    left: 16px;
+}
+
+@media screen and (max-width:760px) {
+    header {
+        background-color: honeydew;
+        height: 55px;
+    }
+    .bg-img {
+        background-image: linear-gradient(rgba(27, 27, 27, 0.5),rgb(5, 36, 4)), url(../img/bg-img2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0;
+        height: calc(100% - 55px);
+    }
+
+    .middle h1 {
+        color: honeydew;
+        font-size: 3rem;
+    }
+    #launchDate {
+        color: honeydew;
+        font-size: 1.5rem;
+    }
+    .footnote {
+        color: honeydew;
+    }
+}
